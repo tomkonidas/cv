@@ -1,11 +1,190 @@
-\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\author{Tom Konidas}
-\title{Full-Stack Developer}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\maketitle
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Tom}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Konidas}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Full-Stack Developer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Monreal}\\
+	\icon{Phone}{12}{+1 514 261-5772}\\
+	\icon{At}{12}{\href{mailto:tomkonidas@pm.me}{tomkonidas@pm.me}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{12}{\href{https://tomkonidas.com}{tomkonidas.com}}\\
+	\icon{Github}{12}{\href{https://github.com/tomkonidas}{github.com/tomkonidas}}\\
+	\icon{Twitter}{12}{\href{https://twitter.com/@tomkonidas}{@tomkonidas}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+  Hello, my name is Tom Konidas and I'm a minimalist who truly believes that less is more. 
+  Coming from a Java/OOP background, I have discovered Functional Programming and have never looked back.
+  I'm a GNU/Linux and cybersecurity enthusiast.
+  I love knowledge and I strongly believe technology can, and should, enrich every single 
+  life our universe has to offer.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Elixir/Phoenix}{85}
+		\baritem{Svelte}{80}
+		\baritem{PostgreSQL}{75}
+		\baritem{TailwindCSS}{90}
+		\baritem{GNU/Linux}{100}
+	\end{barchart}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{1/2019 -- \\\footnotesize{Full Time}}
+		{Full-Stack Developer}
+		{Fix Auto}
+		{Create custom software and tools to better help our employees and franchisees do their jobs.
+      Develop custom reports for helpful insights. Create internal and external HUB.
+      Maintain and update the public sites for over 500+ shops worldwide
+      \\\texttt{Sncode}\slashsep\texttt{Extenso}\slashsep\texttt{MariaDB}\slashsep\texttt{jQuery}\slashsep\texttt{Bootstrap}}
+	\entry
+		{1/2018 -- 12/2018\\\footnotesize{Full Time}}
+		{Application Support Analyst}
+		{Tecsys Inc.}
+		{Investigate and resolve issues regarding Tecsys applications. From diagnosing root causes to creating and installing patches for customers. 
+      Traveling onsite to customers location,Debugging incidents and performing data fixes via SQL. 
+      Troubleshoot performance issues using SolarWinds, JavaMelody, VisualVM and Nagios.
+      \\\texttt{Java}\slashsep\texttt{MS SQL}\slashsep\texttt{SCRUM}\slashsep\texttt{SVN}}
+	\entry
+		{9/2017 -- 12/2017\\\footnotesize{Internship}}
+		{Engineering/Marketing}
+		{Ranger Design}
+    {Hired as the link between Engineering and Marketing to work on the Ranger Design Configurator.
+      Optimized Meshes in Rhino5/Blender helping load times on the website.
+      Created/Edited CAD layouts in Solidworks helping customers visualize their custom orders.
+      \\\texttt{Blender}\slashsep\texttt{SolidWorks}\slashsep\texttt{Rhino5}}
+	\entry
+		{1/2015 -- 5/2015\\\footnotesize{Internship}}
+		{Full-Stack Developer}
+		{Booxi}
+    {Developed an admin panel (CRUD) to help the non-tech savy employees.
+      Coded web-scraping scripts (Python BeautifulSoup Library) to gather new potential customers. 
+      \\\texttt{Java}\slashsep\texttt{Python}\slashsep\texttt{MySQL}\slashsep\texttt{REST}\slashsep\texttt{GWT}\slashsep\texttt{Git}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2020 -- }
+		{Bachelor of Computer Science (BCompSc)}
+		{Concordia University}
+		{}
+	\entry
+		{2012 -- 2015}
+		{DEC in Computer Science \& Technology}
+		{Vanier College}
+		{}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{English} - native\\
+	\textbf{French} - proficient\\
+	\textbf{Greek} - rudimentary
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+  Try new GNU/Linux distros.
+  Discover new podcasts and talks.
+  Learn new Programming Languages/Concepts.
+  Keep up to date with FOSS and Hacker culture.
+  Music, photography, graphic design and videography.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	I help run the Montreal Elixir Meetup by Recording the talks and edit/post them online.
+  I contribute to open source, check my GitHub (link is above)
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
-
