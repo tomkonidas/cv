@@ -7,7 +7,7 @@
 % http://www.LaTeXTemplates.com
 %
 % Authors:
-% Jan Vorisek (jan@vorisek.me)
+% Tom Konidas (tomkonidas@protonmail.ch)
 % Based on a template by Jan Küster (info@jankuester.com)
 % Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
 %
